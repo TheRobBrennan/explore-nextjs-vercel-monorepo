@@ -110,3 +110,11 @@ You can then use the Vercel web interface to:
 
 - Associate your repo with a `GIT INTEGRATION`
 - Update the general settings of this project so that the root directory uses the `nextjs-with-typescript` subdirectory in this repo
+
+### Enhanced configuration
+
+If you have followed the instructions above, your project will deploy **both** applications every time a commit has been pushed to your repository.
+
+If you only want the integration to deploy the apps that have changed with a commit or merge, we can do so by going into each project's `Git Integration` settings, and then define `Ignored Build Step` to `git diff --quiet HEAD^ HEAD ./` to force a new build of the project only when the SHA has changed from the previous deployment.
+
+Recall from our previous set up that we have defined our root directory to point to the appropriate subfolder containing the app.
