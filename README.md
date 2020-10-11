@@ -117,4 +117,8 @@ If you have followed the instructions above, your project will deploy **both** a
 
 If you only want the integration to deploy the apps that have changed with a commit or merge, we can do so by going into each project's `Git Integration` settings, and then define `Ignored Build Step` to `git diff --quiet HEAD^ HEAD ./` to force a new build of the project only when the SHA has changed from the previous deployment.
 
+For the first project - named `envm-nextjs` in the example above - let's define `Ignored Build Step` to `git diff --quiet HEAD^ HEAD ./nextjs`
+
+For the second project - named `envm-nextjs-with-typescript` in the example above - let's define `Ignored Build Step` to `git diff --quiet HEAD^ HEAD ./nextjs-with-typescript`
+
 Recall from our previous set up that we have defined our root directory to point to the appropriate subfolder containing the app.
