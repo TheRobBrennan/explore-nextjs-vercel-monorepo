@@ -118,3 +118,5 @@ If you have followed the instructions above, your project will deploy **both** a
 If you only want the integration to deploy the apps that have changed with a commit or merge, we can do so by going into each project's `Git Integration` settings, and then define `Ignored Build Step` to `git diff --quiet HEAD^ HEAD ./` to force a new build of the project only when the SHA has changed from the previous deployment.
 
 Recall from our previous set up that we have defined our root directory to point to the appropriate subfolder containing the app.
+
+This change allows each separate project to cancel a build if none of its files have changed. 🤓
