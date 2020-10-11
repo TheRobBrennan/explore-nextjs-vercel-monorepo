@@ -1,0 +1,16 @@
+{
+  "name": "explore-nextjs-vercel-monorepo",
+  "version": "0.0.0",
+  "description": "Explore using a monorepo in multiple Vercel projects",
+  "keywords": [],
+  "author": "Rob Brennan <rob@therobbrennan.com> (therobbrennan.com)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-nextjs-vercel-monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-nextjs-vercel-monorepo/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-nextjs-vercel-monorepo#readme"
+}
