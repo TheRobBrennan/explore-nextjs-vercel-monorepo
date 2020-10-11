@@ -24,3 +24,18 @@ Let's verify that our first app runs by starting Next.js in development mode:
 $ cd nextjs
 $ npm run dev
 ```
+
+### Create a Next.js app using TypeScript
+
+We will use the latest version of `create-next-app` to generate our Next.js app with TypeScript automatically configured for us:
+
+```sh
+$ npx create-next-app nextjs-with-typescript --example with-typescript
+```
+
+Let's verify that our first app runs by starting Next.js in development mode:
+
+```sh
+$ cd nextjs-with-typescript
+$ npm run dev
+```
